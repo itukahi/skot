@@ -1,0 +1,2 @@
+class DiaryComent < ApplicationRecord
+end
