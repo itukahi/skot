@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
   resources :diaries
+  resources :diary_coments
+  resources :teachers
+  resources :users
+  get 'home/top'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

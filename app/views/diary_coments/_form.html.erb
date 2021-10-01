@@ -1,0 +1,37 @@
+<%= form_with(model: diary_coment) do |form| %>
+  <% if diary_coment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(diary_coment.errors.count, "error") %> prohibited this diary_coment from being saved:</h2>
+
+      <ul>
+        <% diary_coment.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.number_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :coments %>
+    <%= form.text_area :coments %>
+  </div>
+
+  <div class="field">
+    <%= form.label :diary_id %>
+    <%= form.number_field :diary_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time %>
+    <%= form.datetime_select :time %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
