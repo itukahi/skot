@@ -21,4 +21,28 @@ ActiveRecord::Schema.define(version: 2021_09_28_033450) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+
+  create_table "teachers", force: :cascade do |t|
+    t.string "account"
+    t.string "password"
+    t.string "name"
+    t.string "hurigana"
+    t.integer "grade"
+    t.integer "klass"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "account"
+    t.string "password"
+    t.string "name"
+    t.string "hurigana"
+    t.integer "grade"
+    t.integer "klass"
+    t.integer "number"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
 end
