@@ -16,7 +16,7 @@
   <tbody>
     <% @diaries.each do |diary| %>
       <tr>
-        <td><%= diary.user_id %></td>
+        <td><%= diary.user.name %></td>
         <td><%= diary.title %></td>
         <td><%= diary.contents %></td>
         <td><%= diary.time %></td>
