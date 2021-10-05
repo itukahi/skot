@@ -20,10 +20,49 @@ ActiveRecord::Schema.define(version: 2021_09_28_032941) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
+  create_table "diaries", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "title"
+    t.text "contents"
+    t.datetime "time"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "targets", force: :cascade do |t|
     t.string "janru"
     t.integer "channelnumber"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+  create_table "diary_coments", force: :cascade do |t|
+    t.integer "user_id"
+    t.text "coments"
+    t.integer "diary_id"
+    t.datetime "time"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "teachers", force: :cascade do |t|
+    t.string "account"
+    t.string "password"
+    t.string "name"
+    t.string "hurigana"
+    t.integer "grade"
+    t.integer "klass"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "account"
+    t.string "password"
+    t.string "name"
+    t.string "hurigana"
+    t.integer "grade"
+    t.integer "klass"
+    t.integer "number"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

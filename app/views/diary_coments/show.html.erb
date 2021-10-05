@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @diary_coment.user_id %>
+</p>
+
+<p>
+  <strong>Coments:</strong>
+  <%= @diary_coment.coments %>
+</p>
+
+<p>
+  <strong>Diary:</strong>
+  <%= @diary_coment.diary_id %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @diary_coment.time %>
+</p>
+
+<%= link_to 'Edit', edit_diary_coment_path(@diary_coment) %> |
+<%= link_to 'Back', diary_coments_path %>
