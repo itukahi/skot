@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_29_022817) do
+ActiveRecord::Schema.define(version: 2021_10_13_015506) do
 
   create_table "chats", force: :cascade do |t|
     t.integer "user_id"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2021_09_29_022817) do
     t.datetime "time"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "diarytitle_id"
   end
 
   create_table "diary_coments", force: :cascade do |t|
@@ -35,6 +36,12 @@ ActiveRecord::Schema.define(version: 2021_09_29_022817) do
     t.text "coments"
     t.integer "diary_id"
     t.datetime "time"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "diarytitles", force: :cascade do |t|
+    t.string "title"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
