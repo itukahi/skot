@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :diarytitles
   resources :diaries
   resources :diary_coments
   resources :teachers
