@@ -7,9 +7,9 @@ Rails.application.routes.draw do
   get '/',to:'home#top'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  get '/signup', to:'user#new'
+  get '/signup', to:'users#new'
   get '/login', to:'sessions#new'
-  post '/login', to:'sessions#crea'
+  post '/login', to:'sessions#create'
   delete '/logout', to: 'sessions#destroy'
   root to: 'home#index'
 end
