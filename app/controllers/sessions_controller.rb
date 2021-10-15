@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  skip_before_action :logged_in_user
   #ログイン画面表示（ログイン状態であればログアウトしておく）
   def new
     log_out
@@ -21,5 +22,5 @@ class SessionsController < ApplicationController
     log_out
     redirect_to root_path
   end
-  
+
 end
