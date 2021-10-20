@@ -64,6 +64,6 @@ class DiariesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def diary_params
-      params.require(:diary).permit(:user_id, :title, :contents, :time)
+      params.require(:diary).permit(:user_id, :diarytitle_id, :contents, :time)
     end
 end

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'sessions/new'
+  resources :chats
   resources :diaries
   resources :diary_coments
   resources :teachers
