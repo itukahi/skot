@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.select :diarytitle_id, Diarytitle.all.map { |d| [d.title, d.id] } %>
   </div>
 
   <div class="field">
