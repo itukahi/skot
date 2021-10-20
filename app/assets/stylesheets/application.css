@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+ textarea.textarea-with-border {
+     background-image:
+    repeating-linear-gradient(
+    #fff,
+    #fff calc(1rem - 0.5px),
+    #ced4da calc(1rem - 0.5px),
+    #ced4da 1rem,
+    #fff 1rem
+     );
+     background-origin: content-box;
+     background-clip: content-box;
+     background-attachment:local;
+     }
+
+     texxtarea {
+         line-height: 1.2em;
+     }
