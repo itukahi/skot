@@ -1,15 +1,4 @@
-<h1>Sessions#new</h1>
-<p>Find me in app/views/sessions/new.html.erb</p>
-
-<h1>Log in</h1>
-
-<% if flash[:notice] %>
-  <p><%= flash[:notice] %><p>
-<% end %>
-
-<% if flash[:danger] %>
-  <p><%= flash[:danger] %><p>
-<% end %>
+<h1>ログイン</h1>
 
 <div>
   <div>
@@ -24,6 +13,6 @@
         <%= f.submit "Log in" %>
     <% end %>
 
-    <p>New user? <%= link_to "Sign up now!",signup_path %></p>
+    <%= link_to "新規作成",signup_path %>
   </div>
 </div>
