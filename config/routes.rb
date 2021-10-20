@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'sessions_teacher/new'
   get 'sessions/new'
   resources :chats
   resources :diaries
@@ -13,4 +14,7 @@ Rails.application.routes.draw do
   post '/login', to:'sessions#create'
   delete '/logout', to: 'sessions#destroy'
   root to: 'home#index'
+
+  get '/login_teacher', to:'sessions_teacher#new'
+  post '/login_teacher', to:'sessions_teacher#create'
 end
