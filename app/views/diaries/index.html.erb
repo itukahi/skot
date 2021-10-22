@@ -21,8 +21,13 @@
         <td><%= diary.contents %></td>
         <td><%= diary.time %></td>
         <td><%= link_to '詳細', diary %></td>
+        <% if current_user.id == diary.user_id %>
         <td><%= link_to '編集', edit_diary_path(diary) %></td>
         <td><%= link_to '削除', diary, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% else %>
+        <td></td>
+        <td></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
