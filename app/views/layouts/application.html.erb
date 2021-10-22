@@ -8,6 +8,20 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script>
+       function ShowLength( str ) {
+       document.getElementById("inputlength").innerHTML = str.length + "文字";
+       if (str.length >= 40) {
+        var obj = document.getElementById("diary_contents");
+        obj.style.color = '#ff0000';            //文字色を白にする
+        //obj.style.backgroundColor = '#ff0000';  //背景色を赤にする
+       else
+        
+        }
+       
+    }
+</script>
     </head>
 
   <body>
