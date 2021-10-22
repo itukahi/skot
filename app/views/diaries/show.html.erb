@@ -20,5 +20,8 @@
   <%= @diary.time %>
 </p>
 
+<% if current_user.name == @diary.user.name %>
 <%= link_to '編集', edit_diary_path(@diary) %> |
+<% end %>
 <%= link_to '戻る', diaries_path %>
+
