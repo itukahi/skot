@@ -7,7 +7,11 @@ module SessionsHelper
     #現在ログイン中のユーザー情報を返す（ユーザーがいる場合）
     def current_user
         if session[:user_id]
-            @current_user ||= User.find_by(id: session[:user_id])
+            if session[:i_am_teacher]
+              @current_user ||= Teacher.find_by(id: session[:user_id])
+            else
+              @current_user ||= User.find_by(id: session[:user_id])
+            end
         end
     end
 
@@ -19,6 +23,7 @@ module SessionsHelper
     #現在のユーザーをログアウトする
     def log_out
         session.delete(:user_id)
+        session.delete(:i_am_teacher)
         @current_user = nil
     end
 
