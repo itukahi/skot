@@ -14,22 +14,17 @@ ja:
         created_at:  作成日
         updated_at:  更新日
 
-      user:
-        account:  アカウント
-        password:  パスワード
-        name:  氏名
-        gakunen:  学年
-        kumi:  組
-        created_at:  作成日
-        updated_at:  更新日
-
       
-      teacher:
+      teacher: &milin
         account:  アカウント名
         password:  パスワード
         name:  名前
         hurigana:  フリガナ
         grade:  学年
         klass:  クラス
+        number:  出席番号
         created_at:  作成日
         updated_at:  更新日
+
+      user:
+        <<: *milin
