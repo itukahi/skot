@@ -21,16 +21,14 @@ class DiaryComentsController < ApplicationController
 
   # POST /diary_coments or /diary_coments.json
   def create
-    @diary_coment = DiaryComent.new(diary_coment_params)
+    @diary_coment = DiaryComent.new
+    @diary_coment.coments = params[:diary_coment][:diary_coment]
+    @diary_coment.diary_id = params[:diary_coment][:diary_id]
 
-    respond_to do |format|
-      if @diary_coment.save
-        format.html { redirect_to @diary_coment, notice: "Diary coment was successfully created." }
-        format.json { render :show, status: :created, location: @diary_coment }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @diary_coment.errors, status: :unprocessable_entity }
-      end
+    if @diary_coment.save
+      redirect_to diary_path(@diary_coment.diary_id)
+    else
+      render :new
     end
   end
 
