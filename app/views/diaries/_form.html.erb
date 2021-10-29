@@ -23,7 +23,8 @@
 
   <div class="field">
     <%= form.label :contents %>
-    <%= form.text_area :contents, {size: "24x17", class: "textarea-with-border"} %>
+    <%= form.text_area :contents, {size: "50x20", class: "textarea-with-border",onkeyup:"ShowLength(value);"} %>
+    <p id="inputlength">0文字</p>
   </div>
 
   <div class="field">
@@ -35,3 +36,4 @@
     <%= form.submit %>
   </div>
 <% end %>
+
