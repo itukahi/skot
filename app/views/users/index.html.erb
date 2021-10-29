@@ -24,9 +24,14 @@
         <td><%= user.grade %></td>
         <td><%= user.klass %></td>
         <td><%= user.number %></td>
+        <% if current_user.id == user.id %>
         <td><%= link_to '見る', user %></td>
         <td><%= link_to '編集', edit_user_path(user) %></td>
         <td><%= link_to '削除', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% else %>
+        <td></td>
+        <td></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
