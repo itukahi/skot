@@ -36,8 +36,8 @@ class DiaryComentsController < ApplicationController
   def update
     respond_to do |format|
       if @diary_coment.update(diary_coment_params)
-        format.html { redirect_to @diary_coment, notice: "Diary coment was successfully updated." }
-        format.json { render :show, status: :ok, location: @diary_coment }
+        format.html { redirect_to diary_path(@diary_coment.diary_id), notice: "Diary coment was successfully updated." }
+        format.json { render :show, status: :ok, location: @diary_coment}
       else
         format.html { render :edit, status: :unprocessable_entity }
         format.json { render json: @diary_coment.errors, status: :unprocessable_entity }
