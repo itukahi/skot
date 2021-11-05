@@ -31,3 +31,6 @@
      texxtarea {
          line-height: 1.2em;
      }
+
+     div.me { color: red; }
+     div.you { color: blue; }

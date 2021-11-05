@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'rooms/index'
+  get 'rooms/show'
   get 'sessions_teacher/new'
   get 'sessions/new'
   resources :chats
@@ -7,6 +9,8 @@ Rails.application.routes.draw do
   resources :teachers
   resources :users
   resources :diarytitles
+  resources :targets
+
   get '/',to:'home#top'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
