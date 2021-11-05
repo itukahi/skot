@@ -9,7 +9,9 @@ Rails.application.routes.draw do
   resources :diarytitles
   get '/',to:'home#top'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-
+  get 'home/write_or_show'
+  get 'home/search_grade_class'
+  get 'home/clicked'
   get '/signup', to:'users#new'
   get '/login', to:'sessions#new'
   post '/login', to:'sessions#create'

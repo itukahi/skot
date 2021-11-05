@@ -8,6 +8,19 @@ class DiariesController < ApplicationController
 
   # GET /diaries/1 or /diaries/1.json
   def show
+    prev_diaries = Diary.joins(:user).where(user: {grade: @diary.user.grade, klass: @diary.user.klass}).where("diaries.time < ?", @diary.time).order("diaries.time": :desc)
+    if prev_diaries.present?
+      @prev_diary_id = prev_diaries[0]
+    else
+      @prev_diary_id = nil
+    end
+
+    next_diaries = Diary.joins(:user).where(user: {grade: @diary.user.grade, klass: @diary.user.klass}).where("diaries.time  > ?", @diary.time).order("diaries.time")
+    if next_diaries.present?
+      @next_diary_id = next_diaries[0]
+    else
+      @next_diary_id = nil
+    end
   end
 
   # GET /diaries/new

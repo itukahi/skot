@@ -23,5 +23,7 @@
 <% if current_user.name == @diary.user.name %>
 <%= link_to '編集', edit_diary_path(@diary) %> |
 <% end %>
-<%= link_to '戻る', diaries_path %>
+<%= link_to '戻る', home_search_grade_class_path %>
 
+<%= link_to"<<", diary_path(@prev_diary_id) if @prev_diary_id.present? %>
+<%= link_to">>", diary_path(@next_diary_id) if @next_diary_id.present? %>
