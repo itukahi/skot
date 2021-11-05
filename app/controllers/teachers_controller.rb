@@ -1,5 +1,6 @@
 class TeachersController < ApplicationController
   before_action :set_teacher, only: %i[ show edit update destroy ]
+  before_action :i_am_teacher
 
   # GET /teachers or /teachers.json
   def index
@@ -65,5 +66,12 @@ class TeachersController < ApplicationController
     # Only allow a list of trusted parameters through.
     def teacher_params
       params.require(:teacher).permit(:account, :password, :name, :hurigana, :grade, :klass)
+    end
+
+    def i_am_teacher
+      if session[:i_am_teacher] = true
+      else
+        redirect_to root_path
+      end
     end
 end

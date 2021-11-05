@@ -5,8 +5,6 @@
 <table>
   <thead>
     <tr>
-      <th>Account</th>
-      <th>Password</th>
       <th>Name</th>
       <th>Hurigana</th>
       <th>Grade</th>
@@ -18,8 +16,6 @@
   <tbody>
     <% @teachers.each do |teacher| %>
       <tr>
-        <td><%= teacher.account %></td>
-        <td><%= teacher.password %></td>
         <td><%= teacher.name %></td>
         <td><%= teacher.hurigana %></td>
         <td><%= teacher.grade %></td>
@@ -34,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Teacher', new_teacher_path %>
+<%= link_to '新しく教師用アカウントを作る', new_teacher_path %>
