@@ -1,6 +1,5 @@
-<h1>Editing Diary Coment</h1>
+<h1>コメント編集</h1>
 
 <%= render 'form', diary_coment: @diary_coment %>
 
-<%= link_to 'show', @diary_coment %> |
-<%= link_to 'back', diary_coments_path %>
+<%= link_to '戻る', diary_path(id: @diary_coment.diary_id) %>
