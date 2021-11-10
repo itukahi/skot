@@ -49,7 +49,7 @@ class DiaryComentsController < ApplicationController
   def destroy
     @diary_coment.destroy
     respond_to do |format|
-      format.html { redirect_to diary_coments_url, notice: "Diary coment was successfully destroyed." }
+      format.html { redirect_to  diary_path(id: @diary_coment.diary_id), notice: "Diary coment was successfully destroyed." }
       format.json { head :no_content }
     end
   end
