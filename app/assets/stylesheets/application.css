@@ -32,5 +32,7 @@
          line-height: 1.2em;
      }
 
-     div.me { color: red; }
-     div.you { color: blue; }
+     #messages .me .message p.message_created_at { color: black; text-align: right; font-size: 7px; }
+     #messages .me .message p.message_content { color: red; text-align: right; font-size: 20px; }
+     #messages .you .message p.message_created_at { color: black; font-size: 7px; }
+     #messages .you .message p.message_content { color: blue; font-size: 20px; }

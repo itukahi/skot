@@ -51,7 +51,7 @@ class TargetsController < ApplicationController
   def destroy
     @target.destroy
     respond_to do |format|
-      format.html { redirect_to targets_url, notice: "Target was successfully destroyed." }
+      format.html { redirect_to rooms_index_url, notice: "Target was successfully destroyed." }
       format.json { head :no_content }
     end
   end
