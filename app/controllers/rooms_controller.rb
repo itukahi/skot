@@ -5,6 +5,7 @@ class RoomsController < ApplicationController
 
   def show
     @target_id = params[:target_id]
+    @target = Target.find(@target_id)
     @chats = Chat.where(target_id: params[:target_id])
   end
 end
