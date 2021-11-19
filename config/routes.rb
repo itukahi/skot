@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   get 'home/rule'
   get 'home/write_or_show'
+  get 'home/top'
   get 'home/search_grade_class'
   get 'home/clicked'
   get '/signup', to:'users#new'
