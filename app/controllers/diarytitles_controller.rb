@@ -25,7 +25,7 @@ class DiarytitlesController < ApplicationController
 
     respond_to do |format|
       if @diarytitle.save
-        format.html { redirect_to @diarytitle, notice: "Diarytitle was successfully created." }
+        format.html { redirect_to diarytitles_path, notice: "Diarytitle was successfully created." }
         format.json { render :show, status: :created, location: @diarytitle }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DiarytitlesController < ApplicationController
   def update
     respond_to do |format|
       if @diarytitle.update(diarytitle_params)
-        format.html { redirect_to @diarytitle, notice: "Diarytitle was successfully updated." }
+        format.html { redirect_to diarytitles_path, notice: "Diarytitle was successfully updated." }
         format.json { render :show, status: :ok, location: @diarytitle }
       else
         format.html { render :edit, status: :unprocessable_entity }
