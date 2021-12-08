@@ -28,10 +28,11 @@ const appRoom = consumer.subscriptions.create("RoomChannel", {
 });
 
 window.addEventListener("keypress", function(e){
-  if (e.keyCode === 13){
+  if (e.keyCode === 13){if (e.target.value != ''){
     appRoom.speak(e.target.value, document.getElementById("target_id").value,
     document.getElementById("current_user").value);
     e.target.value = '';
     e.preventDefault();
   }
+}
 })
