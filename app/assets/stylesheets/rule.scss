@@ -28,7 +28,7 @@
     width:0;
     pointer-events:none;
     position:absolute;
-    border-color: rgba(255, 187, 5, 0);
+    border-color: rgba(255, 187, 55, 0);
     border-top-width:10px;
     border-bottom-width:10px;
     border-left-width:19px;
@@ -36,5 +36,15 @@
     margin-top: -10px;
     border-left-color:#FFBB05;
     left:100%;
-    top:82%;
+    top:34%;
 }
+
+
+
+.class1 {
+    position:absolute;
+    top:150px;
+    left:850px;
+    bottom:200px;
+    right:500px;
+  }
