@@ -11,8 +11,8 @@
   <% end %>
 </div>
 <form>
-  <label>お話しして🍞:</label><br>
-  <input type="text" data-behavior="room_speaker">
+  <label>お話しして🍞:</label>
+  <input type="text" data-behavior="room_speaker" class = text1>
   <%= hidden_field_tag :target_id, @target_id %>
   <%= hidden_field_tag :current_user, current_user.id %>
   </form>

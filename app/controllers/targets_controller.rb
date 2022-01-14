@@ -49,6 +49,7 @@ class TargetsController < ApplicationController
 
   # DELETE /targets/1 or /targets/1.json
   def destroy
+   # if nowtime = 0:00
     @target.destroy
     respond_to do |format|
       format.html { redirect_to rooms_index_url, notice: "Target was successfully destroyed." }
