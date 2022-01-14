@@ -26,10 +26,13 @@ class DiariesController < ApplicationController
   # GET /diaries/new
   def new
     @diary = Diary.new
+    diary_title_id = Diary.where(user_id: current_user.id).pluck(:diarytitle_id)
+    @diarytitle = Diarytitle.where("id NOT IN (?)", diary_title_id)
   end
 
   # GET /diaries/1/edit
   def edit
+    @diarytitle = Diarytitle.where("id = ?", @diary.diarytitle_id)
   end
 
   # POST /diaries or /diaries.json
