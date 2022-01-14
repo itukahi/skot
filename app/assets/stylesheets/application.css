@@ -32,7 +32,45 @@
          line-height: 1.2em;
      }
 
+     #fifteen{
+        font-size: 180px;
+    }
+
+    
+    #six{
+        font-size:60px;
+    }
+
      #messages .me .message p.message_created_at { color: black; text-align: right; font-size: 20px; }
      #messages .me .message p.message_content { color: red; text-align: right; font-size: 30px; }
      #messages .you .message p.message_created_at { color: black; font-size: 20px; }
      #messages .you .message p.message_content { color: blue; font-size: 30px; }
+
+     .gakunen_1 {
+        margin-left: 300px;
+        margin-right: 200px;
+        float: left;
+     }
+
+     .gakunen_2 {
+        margin-right: 200px;
+        float: left;
+     }
+     .gakunen_3 {
+        
+        float: left;
+     }
+
+
+
+     .write_1 {
+      margin-left: 100px;
+      margin-right: 200px;
+      float: left;
+     }
+
+     .show_1 {
+      
+      float: left;
+
+     }
