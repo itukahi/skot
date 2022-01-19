@@ -69,7 +69,8 @@
         width: 45%;
         /* color: #555; */
         /* font-size: 16px; */
-        background: #ddec09;
+        border-radius: 25px;
+        background: #f1a3eb;
       }
       
       #messages .me:before {
@@ -79,7 +80,7 @@
         left: 100%;
         margin-top: -15px;
         border: 15px solid transparent;
-        border-left: 15px solid #3eec09;
+        border-left: 15px solid #f1a3eb;
       }
       
       #messages .me p {
@@ -97,7 +98,8 @@
         width: 45%;
         /* color: #555; */
         /* font-size: 16px; */
-        background: #f1c8a0;
+        border-radius: 25px;
+        background: #e0edff;
       }
       
       #messages .you:before {
@@ -116,8 +118,8 @@
       }
       
 
-     #messages .me { margin-left: 50%; }
-     #messages .you { margin-right: 50%; }
+     #messages .me { margin-left: 50%; margin-top: 20px; }
+     #messages .you { margin-right: 50%; margin-top: 20px; }
 
      .text1{
       width: 60%; /*親要素いっぱい広げる*/

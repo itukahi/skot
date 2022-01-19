@@ -13,6 +13,8 @@
 <form>
   <label>お話しして🍞:</label>
   <input type="text" data-behavior="room_speaker" class = text1>
+  <br>
+  <%= link_to '戻る', rooms_index_path %>
   <%= hidden_field_tag :target_id, @target_id %>
   <%= hidden_field_tag :current_user, current_user.id %>
   </form>
