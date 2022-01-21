@@ -200,3 +200,6 @@
      #messages .you .message p.message_content { color: rgba(235, 145, 61, 0.918); text-align: left; font-size: 30px; line-height: 1.2em; word-wrap: break-word;}
 
 
+     a:hover {
+        background-color: transparent;
+      }
