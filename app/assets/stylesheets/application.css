@@ -36,3 +36,9 @@
      #messages .me .message p.message_content { color: red; text-align: right; font-size: 30px; }
      #messages .you .message p.message_created_at { color: black; font-size: 20px; }
      #messages .you .message p.message_content { color: blue; font-size: 30px; }
+
+
+     
+     a:hover {
+        background-color: transparent;
+      }
