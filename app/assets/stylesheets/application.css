@@ -26,6 +26,7 @@
      background-origin: content-box;
      background-clip: content-box;
      background-attachment:local;
+     margin-left: -100px;
      }
 
      texxtarea {
@@ -59,16 +60,36 @@
 
 
      .write_1 {
-      margin-left: 100px;
+      margin-top: 150px;
+      margin-left: 250px;
       margin-right: 200px;
       float: left;
      }
 
      .show_1 {
-      
+      margin-top: 150px;
       float: left;
 
      }
+
+     #middle{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+     
+      padding: 150px 150px;
+      background: rgba(255, 255, 255, );
+      color: #fff;
+      text-align: center;
+      width: 300px;
+    }
+
+
+
+
+
+
      body {
         background: rgb(223, 146, 59,0.5);
         color: #333;
