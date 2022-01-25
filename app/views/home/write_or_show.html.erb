@@ -1,25 +1,16 @@
 <div class="write_1">
 <%= link_to new_diary_path do %>
-  <div class="box">
+  
     <%= image_tag "/images/書く4.png" %>
   </div>
 <% end %>
-</div>
+
 
 <div class="show_1">
 <%= link_to home_search_grade_class_path do %>
-  <div class="box">
   <%= image_tag "/images/見る6.png" %>
 </div>
 <% end %>
-</div>
-
-
-
-
-
-
-
 
 <% if session[:i_am_teacher] %>
   <%= link_to 'お題編集', diarytitles_path %>
