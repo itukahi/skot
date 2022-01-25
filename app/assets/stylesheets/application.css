@@ -87,6 +87,53 @@
 
 
 
+    #middle2{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+     
+      padding: 150px 150px;
+      background: rgba(255, 255, 255, );
+      color: #fff;
+      text-align: center;
+      width: 300px;
+    }
+
+    #middle3{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+     
+      padding: 200px 400px;
+      background: rgb(248, 231, 214);
+      color: rgb(8, 4, 4);
+      text-align: center;
+      width: 300px;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
