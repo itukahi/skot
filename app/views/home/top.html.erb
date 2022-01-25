@@ -1,6 +1,29 @@
 <h1>具材ページ</h1>
 <p>選んでください</p>
-<%= link_to 'チャット',rooms_index_path %>
-<%= link_to '日誌',home_write_or_show_path %>
-<%= link_to '利用規約',home_rule_path %>
+<div class="sample1">
+<div class="box">
+  <%= link_to "", rooms_index_path, {class: "box_link"} %>
+    <%= image_tag "/images/チャット.png" %>
+    <%= image_tag "/images/チャットスコット.png" %>
+</div>
+</div>
+
+  <div class="sample2">
+  <div class="box">
+   <%= link_to "",home_write_or_show_path, {class: "box_link"} %>
+    <%= image_tag "/images/日誌.png" %>
+    <%= image_tag "/images/日誌スコット.png" %>
+  </div>
+  </div>
+  
+
+
+<div class="sample3">
+<div class="box">
+  <%= link_to "",home_rule_path, {class: "box_link"} %>
+    <%= image_tag "/images/利用規約.png" %>
+    <%= image_tag "/images/利用規約スコット.png" %>
+</div>
+</div>
+
 
