@@ -64,10 +64,10 @@
       }
 
       #tyattocontents{
-        position: absolute;
+        position: relative;
         top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        left: 35%;
+        transform: translate(0%, 0%);
        
         padding: 50px 30px;
         background: rgb(223, 146, 59, 0);
@@ -78,7 +78,7 @@
 
       #komento{
 
-        margin-left: 100px;
+        margin-left: 50px;
       }
 
       .balloon{
