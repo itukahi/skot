@@ -1,16 +1,21 @@
-<h1>何を話す？</h1>
+<div id="tyattocontents">
 
+<span style="font-size:36px;"><b>何について話す？</b></span>
+<div id="komento">
 <table>
   <tbody>
   <% @targets.each do |target| %>
       <tr>
-          <td><%= link_to target.janru, rooms_show_path(target_id: target) %></td>
+          <td><span style="font-size:30px;"><%= link_to target.janru, rooms_show_path(target_id: target) %></span></td>
       　　<td><%= link_to '削除', target, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<%= link_to '新しく何を話したい？', new_target_path %>
+</div>
 <br>
-<%= link_to 'トップ画面に戻る', home_top_path %>
+<br>
+<span style="font-size:20px;"><%= link_to '何を新しく話したい？', new_target_path %></span>
+<br>
+<span style="font-size:20px;"><%= link_to 'トップ画面に戻る', home_top_path %></span>
+</div>
