@@ -6,8 +6,8 @@
   <tbody>
   <% @targets.each do |target| %>
       <tr>
-          <td><span style="font-size:30px;"><%= link_to target.janru, rooms_show_path(target_id: target) %></span></td>
-      　　<td><%= link_to '削除', target, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td style="width:300px; line-height: 2.5em;"><span style="font-size:30px;"><%= link_to target.janru, rooms_show_path(target_id: target) %></span></td>
+      　　<td style="width:50px;"><%= link_to '削除', target, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
