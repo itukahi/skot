@@ -1,8 +1,5 @@
-<h1>SessionsTeacher#new</h1>
-<p>Find me in app/views/sessions_teacher/new.html.erb</p>
-
-
-<h1>Log in</h1>
+<div id="contents2"> 
+<h1>SKOTへようこそスコー</h1>
 
 <% if flash[:notice] %>
   <p><%= flash[:notice] %><p>
@@ -21,8 +18,12 @@
 
         <%= f.label "パスワード" %>
         <%= f.password_field :password %>
+        <br>
+        <br>
 
         <%= f.submit "ログイン" %>
+        <br>
+        <%= link_to "生徒用ログインへ",login_path %>
     <% end %>
 
   </div>
